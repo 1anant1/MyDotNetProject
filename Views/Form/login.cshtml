@@ -1,0 +1,23 @@
+﻿@model Registration
+
+<form method="post">
+    
+<div class="row">
+        <label asp-for="UserName" class="col-md-3 control-label text-end">UserName</label> 
+        <input asp-for="UserName" class="col-md-4" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+  </div><br />
+  <div class="row">
+        <label asp-for="ConfirmPassword" class="col-md-3 control-label text-end">Password</label> 
+        <input asp-for="ConfirmPassword" class="col-md-4"  />
+        
+  </div><br />
+  <div class=" col-md-8 text-center">
+        <button type="submit" class="btn btn-primary"  style="width:250px">Submit</button>
+
+        </div>
+        <span class=" col-md-8 text-center" style="color:red;">
+                @ViewBag.Message
+            </span>
+            <a></a>
+</form>

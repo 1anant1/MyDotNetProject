@@ -1,0 +1,28 @@
+﻿@model  Registration
+
+<form method="post">
+    <div class="border p-3 mt-4"><
+        <div class="row pb-2">
+            <h2 class="text-primary">Registration Form</h2>
+            <label asp-for="UserName">@ViewBag.UserName
+            </label>
+            <div class="form-check">
+  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+  <label class="form-check-label" for="radio1"></label>
+</div>
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+  <label class="form-check-label" for="radio2"></label>
+</div>
+<div class="form-check">
+  <input type="radio" class="form-check-input" disabled>Option 3
+  <label class="form-check-label"></label>
+</div>
+<div class=" col-md-8 text-center">
+        <button type="submit" class="btn btn-primary"  style="width:250px">Submit</button>
+
+        </div>
+        <div>
+
+     </div>
+</form>
